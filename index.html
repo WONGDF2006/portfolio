@@ -8,6 +8,9 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js" defer></script>
+  <script src="learning.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -60,13 +63,31 @@
         <li>Web accessibility (WCAG)</li>
         <li>Lighthouse performance audits</li>
         <li>Git &amp; GitHub Pages</li>
+        <li>React components, props &amp; state</li>
       </ul>
+    </section>
+
+    <section class="section" id="learning" aria-labelledby="learning-heading">
+      <h2 id="learning-heading">What I'm learning</h2>
+      <p class="page-intro">A small React component on this page: tick a topic and the progress bar updates from state.</p>
+      <div id="learning-tracker">
+        <noscript><p>This checklist needs JavaScript.</p></noscript>
+      </div>
     </section>
 
     <section class="section" id="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Featured projects</h2>
-      <p class="page-intro"><a href="projects.html">See all six projects, filterable by technology →</a></p>
+      <p class="page-intro"><a href="projects.html">See all seven projects, filterable by technology →</a></p>
       <ul class="projects">
+        <li class="project-card">
+          <h3>Study Supplies Shop</h3>
+          <p>An interactive React shopping cart: add products, change quantities with − / +, and a total worked out from <code>useState</code>.</p>
+          <p class="tags">React · CSS · Vite</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/shopping-cart/">Live site<span class="visually-hidden"> for Study Supplies Shop</span></a>
+            <a href="https://github.com/WONGDF2006/shopping-cart">Code<span class="visually-hidden"> for Study Supplies Shop</span></a>
+          </p>
+        </li>
         <li class="project-card">
           <h3>Book Search App</h3>
           <p>Searches millions of books with the Open Library API using <code>fetch()</code>, with loading skeletons and empty/error states.</p>

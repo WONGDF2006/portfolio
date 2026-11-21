@@ -90,3 +90,14 @@ main:focus { outline: none; }
 .project-card h2 { margin: 0 0 8px; font-size: 1.15rem; }
 .project-card[hidden] { display: none; }
 .nav-links a[aria-current="page"] { color: var(--accent); }
+
+/* What I'm learning (React tracker) */
+#learning-tracker { padding: 22px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.tracker-progress p { margin: 0 0 6px; font-weight: 600; }
+.tracker-progress progress { width: 100%; height: 14px; accent-color: var(--accent); }
+.tracker-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px 16px; margin: 16px 0; padding: 0; list-style: none; }
+.tracker-list label { cursor: pointer; }
+.tracker-list input { width: 18px; height: 18px; vertical-align: -3px; accent-color: var(--accent); }
+.tracker-note label { display: block; margin-bottom: 6px; font-weight: 600; }
+.tracker-note textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 8px; font: inherit; color: var(--text); background: var(--bg); }
+.word-count { margin: 4px 0 0; font-size: .9rem; color: var(--muted); }
