@@ -72,3 +72,9 @@ main:focus { outline: none; }
   .avatar { width: 112px; height: 112px; }
   .hero h1 { font-size: 1.9rem; overflow-wrap: anywhere; }
 }
+
+/* About me facts */
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 0; }
+.facts div { padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.facts dt { font-size: .8rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.facts dd { margin: 2px 0 0; font-weight: 600; }
