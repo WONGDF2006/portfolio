@@ -78,3 +78,15 @@ main:focus { outline: none; }
 .facts div { padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
 .facts dt { font-size: .8rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
 .facts dd { margin: 2px 0 0; font-weight: 600; }
+
+/* Projects page */
+.page-title { margin: 32px 0 6px; font-size: 2.2rem; }
+.page-intro { margin: 0 0 16px; color: var(--muted); }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-button { padding: 7px 14px; border: 1px solid var(--border); border-radius: 999px; font: 600 .9rem system-ui, sans-serif; color: var(--text); background: var(--surface); cursor: pointer; }
+.filter-button:hover { border-color: var(--accent); }
+.filter-button[aria-pressed="true"] { border-color: var(--accent); color: var(--bg); background: var(--accent); }
+.result-count { margin: 14px 0; color: var(--muted); }
+.project-card h2 { margin: 0 0 8px; font-size: 1.15rem; }
+.project-card[hidden] { display: none; }
+.nav-links a[aria-current="page"] { color: var(--accent); }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · WongDengFoong</title>
+  <meta name="description" content="All Web Programming projects by WongDengFoong, filterable by technology.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="projects.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">WongDengFoong</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html#about-me">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+      <span aria-hidden="true">◐</span> <span class="label">Dark mode</span>
+    </button>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="section" aria-labelledby="page-heading">
+      <h1 id="page-heading" class="page-title">Projects</h1>
+      <p class="page-intro">Everything I've built in Web Programming this semester. Filter by technology:</p>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects by technology" id="filter-bar"></div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+
+      <ul class="projects" id="project-list">
+        <li class="project-card" data-tech="HTML,CSS,JavaScript,Fetch API">
+          <h2>Book Search App</h2>
+          <p>Searches millions of books with the Open Library API using <code>fetch()</code>, with loading skeletons and empty/error states.</p>
+          <p class="tags">HTML · CSS · JavaScript · Fetch API</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/webpro-book-search/">Live site<span class="visually-hidden"> for Book Search App</span></a>
+            <a href="https://github.com/WONGDF2006/webpro-book-search">Code<span class="visually-hidden"> for Book Search App</span></a>
+          </p>
+        </li>
+        <li class="project-card" data-tech="React,CSS,Vite">
+          <h2>Student Directory</h2>
+          <p>A React <code>StudentProfileCard</code> component with five props, rendering a styled card for each student (Task 11-A).</p>
+          <p class="tags">React · CSS · Vite</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/task11/">Live site<span class="visually-hidden"> for Student Directory</span></a>
+            <a href="https://github.com/WONGDF2006/task11">Code<span class="visually-hidden"> for Student Directory</span></a>
+          </p>
+        </li>
+        <li class="project-card" data-tech="React,CSS,Vite">
+          <h2>Portfolio Gallery</h2>
+          <p>React <code>ProjectCard</code>, <code>ProjectList</code> and <code>FilterBar</code> components that filter projects by technology.</p>
+          <p class="tags">React · CSS · Vite</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/portfolio-gallery/">Live site<span class="visually-hidden"> for Portfolio Gallery</span></a>
+            <a href="https://github.com/WONGDF2006/portfolio-gallery">Code<span class="visually-hidden"> for Portfolio Gallery</span></a>
+          </p>
+        </li>
+        <li class="project-card" data-tech="HTML,CSS,JavaScript">
+          <h2>Web Programming Course Library</h2>
+          <p>Every lesson, exercise and homework from the course in one site, audited with Lighthouse for accessibility and performance.</p>
+          <p class="tags">HTML · CSS · JavaScript</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/WebProgramming_Gachon/">Live site<span class="visually-hidden"> for Course Library</span></a>
+            <a href="https://github.com/WONGDF2006/WebProgramming_Gachon">Code<span class="visually-hidden"> for Course Library</span></a>
+          </p>
+        </li>
+        <li class="project-card" data-tech="HTML,CSS,Git">
+          <h2>First Git Repository</h2>
+          <p>My first repository tracked with Git, pushed to GitHub, and published with GitHub Pages.</p>
+          <p class="tags">HTML · CSS · Git</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/webpro-w9/">Live site<span class="visually-hidden"> for First Git Repository</span></a>
+            <a href="https://github.com/WONGDF2006/webpro-w9">Code<span class="visually-hidden"> for First Git Repository</span></a>
+          </p>
+        </li>
+        <li class="project-card" data-tech="Team project">
+          <h2>Gachon WIND CCA Website Proposal</h2>
+          <p>A team project (Team 16): a proposal and walkthrough video for the Gachon WIND club website.</p>
+          <p class="tags">Team project · Web design · Presentation</p>
+          <p class="links">
+            <a href="https://wongdf2006.github.io/WebProgramming_Gachon/#assignment">Video &amp; slides<span class="visually-hidden"> for Gachon WIND CCA proposal</span></a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 WongDengFoong · <a href="https://github.com/WONGDF2006">GitHub</a></p>
+  </footer>
+</body>
+</html>
